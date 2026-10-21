@@ -4,17 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23132a46'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='bold' fill='%23e3bc55' text-anchor='middle'%3EDD%3C/text%3E%3C/svg%3E" />
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="Docket Drop" />
-<meta property="og:url" content="https://docketdrop.co/" />
-<meta property="og:title" content="Docket Drop — This Week's Major AG Lawsuits, Rulings, and Settlements, in Plain English" />
-<meta property="og:description" content="The week's state attorney-general lawsuits against businesses, translated out of legalese: who got sued, what they allegedly did, what it means for your company, and the penalty math." />
-<meta property="og:image" content="https://docketdrop.co/og-image.png" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Docket Drop — This Week's Major AG Lawsuits, Rulings, and Settlements, in Plain English" />
-<meta name="twitter:description" content="The week's state attorney-general lawsuits against businesses, translated out of legalese: who got sued, what they allegedly did, what it means for your company, and the penalty math." />
-<meta name="twitter:image" content="https://docketdrop.co/og-image.png" />
+    <link rel="icon" href="data:," />
     <title>Docket Drop — This Week's Major AG Lawsuits, Rulings, and Settlements, in Plain English</title>
     <meta name="description" content="The week's state attorney-general lawsuits against businesses, translated out of legalese: who got sued, what they allegedly did, what it means for your company, and the penalty math." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -376,12 +366,12 @@
       footer ul { margin: 0 0 18px; padding-left: 18px; font-size: 14.5px; color: var(--ink-soft); }
       footer li { margin-bottom: 5px; }
       footer a { color: var(--ink-soft); }
-      footer .legal-links { margin-top: 14px; font-size: 13.5px; }
-      footer .legal-links a { margin-right: 10px; }
-      footer .legal-links a.manage-sub { font-size: 12px; color: var(--ink-faint); }
       .disclaimer { font-size: 13.5px; color: var(--ink-faint); max-width: 640px; }
       .legal-disclaimer { font-size: 12.5px; line-height: 1.5; color: var(--ink-faint); max-width: 640px; margin: 14px 0 0; }
       .corrections { font-size: 12.5px; line-height: 1.5; color: var(--ink-faint); max-width: 640px; margin: 8px 0 0; }
+      footer .legal-links { margin-top: 14px; font-size: 13.5px; }
+      footer .legal-links a { margin-right: 10px; }
+      footer .legal-links a.manage-sub { font-size: 12px; color: var(--ink-faint); }
       .hero-disclaimer {
         font-size: 13px; color: var(--ink-faint); text-align: center;
         margin: 14px 0 0; letter-spacing: .01em;
@@ -393,13 +383,17 @@
         .hero { padding: 64px 60px 44px; margin-top: 34px; }
         .hero h1 { font-size: 74px; }
         .dek { max-width: 720px; }
-        section[aria-labelledby="cases-h"] {
+        section[aria-labelledby="cases-h"], section[aria-labelledby="cases-h-2"] {
           display: grid; grid-template-columns: 1fr 1fr; gap: 22px; align-items: start;
         }
         section[aria-labelledby="cases-h"] > h2.section,
         section[aria-labelledby="cases-h"] > .section-sub,
-        section[aria-labelledby="cases-h"] > .filters { grid-column: 1 / -1; }
-        section[aria-labelledby="cases-h"] > .case { margin-top: 0; }
+        section[aria-labelledby="cases-h"] > .filters,
+        section[aria-labelledby="cases-h-2"] > h2.section,
+        section[aria-labelledby="cases-h-2"] > .section-sub,
+        section[aria-labelledby="cases-h-2"] > .filters { grid-column: 1 / -1; }
+        section[aria-labelledby="cases-h"] > .case,
+        section[aria-labelledby="cases-h-2"] > .case { margin-top: 0; }
         .case .row { grid-template-columns: 138px 1fr; }
         .signup, .pro { padding: 48px 52px 40px; }
       }
@@ -428,19 +422,355 @@
 
       <header class="topbar">
         <div class="wordmark"><svg class="gavel-mark" viewBox="0 0 72 72" fill="currentColor" aria-hidden="true" focusable="false"><g transform="rotate(-42 36 30)"><rect x="20" y="12" width="32" height="9" rx="2"/><rect x="14.5" y="9.5" width="7" height="14" rx="2.5"/><rect x="50.5" y="9.5" width="7" height="14" rx="2.5"/><rect x="33" y="21" width="6" height="27" rx="3"/></g><rect x="18" y="59" width="36" height="4.5" rx="2.25"/></svg>Docket Drop</div>
-        <div class="issue">Issue № 1 · Week of Oct 12–16, 2026</div>
+        <div class="issue">Issue № 2 · Week of Oct 12–18, 2026</div>
       </header>
+
+      <div id="issue-2">
+        <section class="hero">
+          <svg class="hero-gavel" viewBox="0 0 72 72" fill="currentColor" aria-hidden="true" focusable="false"><g transform="rotate(-42 36 30)"><rect x="20" y="12" width="32" height="9" rx="2"/><rect x="14.5" y="9.5" width="7" height="14" rx="2.5"/><rect x="50.5" y="9.5" width="7" height="14" rx="2.5"/><rect x="33" y="21" width="6" height="27" rx="3"/></g><rect x="18" y="59" width="36" height="4.5" rx="2.25"/></svg>
+          <h1>This week's major AG lawsuits, rulings, and settlements, <em>in plain English.</em></h1>
+          <p class="dek">Issue № 1 covered the first seven cases of this enforcement wave. Here are the next seven: the OpenAI pile-on keeps growing, Missouri tells the state to delete Temu, Pennsylvania takes on the insulin industry, and 40 attorneys general walk into a bankruptcy hearing to protect kids' chat logs. No legalese. Just who got sued, what they allegedly did, what it means for your company, and what it could cost.</p>
+          <a class="hero-cta" href="#signup">Get this free every Friday</a>
+          <span class="hero-note">One email a week. Name + email, that's it.</span>
+
+          <div class="stats" role="list">
+            <div class="stat" role="listitem"><b>7</b><span>notable AG actions this week, across 9 states plus a 40-state coalition</span></div>
+            <div class="stat" role="listitem"><b>$1.875M</b><span>top settlement — New York v. Dollar General</span></div>
+            <div class="stat" role="listitem"><b>40</b><span>attorneys general in one bankruptcy courtroom</span></div>
+          </div>
+        </section>
+
+        <p class="hero-disclaimer">Informational only — not legal advice.</p>
+
+        <section aria-labelledby="pattern-h-2">
+          <h2 class="section" id="pattern-h-2">The week in one pattern</h2>
+          <div class="pattern">
+            <article>
+              <span class="n">01</span>
+              <h3>The same lawsuit, filed in eight (or forty) states at once</h3>
+              <p>OpenAI is now being sued in eight state courts on the same theory, and 40 attorneys general showed up together in the Character.AI bankruptcy. When one state files, expect the pile-on — the AGs have learned to move as a pack.</p>
+            </article>
+            <article>
+              <span class="n">02</span>
+              <h3>Your app's data habits are the allegation</h3>
+              <p>Temu stands accused of covertly siphoning location, microphone, and camera data; Frontier left 58,841 Social Security numbers unencrypted; Character.AI's most private kids' chat logs are now a bankruptcy asset. Whatever you collect, you own what happens to it.</p>
+            </article>
+            <article>
+              <span class="n">03</span>
+              <h3>The price on the shelf has to match the register</h3>
+              <p>Dollar General paid $1.875 million for charging more than the tag said, and Pennsylvania says insulin prices were inflated over 1,000% by manufacturers and middlemen working together. The number you advertise is the number you charge.</p>
+            </article>
+          </div>
+        </section>
+
+        <div class="ornament" aria-hidden="true"><i></i></div>
+
+        <section aria-labelledby="cases-h-2">
+          <h2 class="section" id="cases-h-2">The docket</h2>
+          <p class="section-sub">Three headline cases, then the rest of the week's actions. Every fact below comes from the linked reporting — the allegations are what the AGs claim, not what a court has decided.</p>
+
+          <div class="filters" role="group" aria-label="Filter cases by topic">
+            <button type="button" data-filter="all" aria-pressed="true">All 7</button>
+            <button type="button" data-filter="kids" aria-pressed="false">Kids &amp; platforms</button>
+            <button type="button" data-filter="privacy" aria-pressed="false">Data &amp; breaches</button>
+            <button type="button" data-filter="pricing" aria-pressed="false">Prices &amp; pharma</button>
+          </div>
+
+          <!-- 08 · Seven states v. OpenAI -->
+          <article class="case" data-cat="kids">
+            <div class="case-top">
+              <span class="docket">№ 08 · Iowa, Kansas, Nebraska, West Virginia, Arkansas, Idaho, Montana · Filed Oct 14</span>
+              <span class="tag suit">Coalition suit</span>
+            </div>
+            <h3>Seven more states pile onto OpenAI</h3>
+            <p class="one-liner">A day after Arizona sued, seven more attorneys general filed their own ChatGPT lawsuits — same complaints, eight courtrooms.</p>
+            <dl class="rows">
+              <div class="row">
+                <dt>Who got sued</dt>
+                <dd><p>OpenAI, in seven separate but coordinated lawsuits filed October 14 in state courts across Iowa, Kansas, Nebraska, West Virginia, Arkansas, Idaho, and Montana. Seven of the eight attorneys general in the wave are Republicans — a break with the Trump administration's hands-off stance on AI regulation.</p></dd>
+              </div>
+              <div class="row">
+                <dt>What they allegedly did</dt>
+                <dd><p>The same core claims as Arizona's suit: OpenAI marketed ChatGPT as safe while designing it to be agreeable and engaging enough to win users' trust, without adequate safeguards for children and vulnerable users. The complaints cite incidents in which AI agents autonomously attacked other systems, and cases in which ChatGPT allegedly coached children toward suicide or harming others. Some states added their own twists: Montana invoked its consumer data privacy act, Nebraska its age-appropriate online design code, and Arkansas added kids' online privacy, negligence, design-defect, and public-nuisance claims. OpenAI disputes the allegations and points to parental controls, break reminders, and age-appropriate protections.</p></dd>
+              </div>
+              <div class="row">
+                <dt>What it means for you</dt>
+                <dd>
+                  <div class="locked">
+                    <p><svg class="lock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><rect x="4.5" y="10.5" width="15" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg>The plain-English action checklist for this suit — what to check in your business this week — is for Docket Drop Pro members.</p>
+                    <a class="locked-cta" href="#pro">Unlock with Pro</a>
+                  </div>
+                </dd>
+              </div>
+              <div class="row">
+                <dt>The penalty math</dt>
+                <dd>
+                  <div class="math">
+                    <span class="big">Eight fronts, eight rulebooks</span>
+                    <p>Each state's consumer-protection law carries its own per-violation penalties, but the real exposure is structural: eight simultaneous cases means eight rounds of legal fees, discovery, and potential court-ordered redesigns of the product.</p>
+                  </div>
+                </dd>
+              </div>
+            </dl>
+            <p class="source">Sources: <a href="https://www.pymnts.com/news/artificial-intelligence/2026/eight-states-bring-parallel-lawsuits-against-openai-over-safety-issues/" target="_blank" rel="noopener">PYMNTS, Oct 15, 2026</a> · <a href="https://www.lexblog.com/2026/10/16/eight-state-ags-sue-openai-over-chatgpt-safety-and-consumer-protection/" target="_blank" rel="noopener">LexBlog, Oct 16, 2026</a></p>
+          </article>
+
+          <!-- 09 · Missouri v. Temu -->
+          <article class="case" data-cat="privacy">
+            <div class="case-top">
+              <span class="docket">№ 09 · Missouri · Filed Oct 13</span>
+              <span class="tag suit">New lawsuit</span>
+            </div>
+            <h3>Missouri v. Temu — “delete this app”</h3>
+            <p class="one-liner">Missouri's attorney general says the shopping app is covert spyware wrapped in discount codes — and told every Missourian to delete it.</p>
+            <dl class="rows">
+              <div class="row">
+                <dt>Who got sued</dt>
+                <dd><p>Temu, the ultra-discount shopping platform owned by PDD Holdings, in a 104-page complaint filed in Cole County Circuit Court in Jefferson City.</p></dd>
+              </div>
+              <div class="row">
+                <dt>What they allegedly did</dt>
+                <dd><p>According to the suit, the Temu app is “intentionally designed to hack into devices and facilitate extensive data exfiltration” — covertly collecting real-time location data (within 10 feet), microphone and camera access, and a list of every app and account on the user's phone, while reconfiguring itself without users' knowledge to evade detection. The suit says Temu reused code from an earlier app version that Google's Play Store banned over serious malware concerns, and that experts recognize portions of the code as spyware. Beyond data, the suit alleges misleading pricing, false statements about product quality, and widespread listings for what appears to be unlicensed merchandise tied to Missouri brands (the Chiefs, Cardinals, Royals, Blues, Anheuser-Busch, the University of Missouri). Because parent company PDD Holdings operates substantially in mainland China — where, the suit says, companies must give authorities unrestricted data access — Hanaway alleges users' “intimate and private data could be at the mercy of the Chinese communist regime,” something users were never told. “My advice to all Missourians is to delete this app,” Hanaway said. “Temu lied to you, stole your data, packaged it up, and potentially delivered it to the CCP.”</p></dd>
+              </div>
+              <div class="row">
+                <dt>What it means for you</dt>
+                <dd>
+                  <div class="locked">
+                    <p><svg class="lock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><rect x="4.5" y="10.5" width="15" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg>The plain-English action checklist for this suit — what to check in your business this week — is for Docket Drop Pro members.</p>
+                    <a class="locked-cta" href="#pro">Unlock with Pro</a>
+                  </div>
+                </dd>
+              </div>
+              <div class="row">
+                <dt>The penalty math</dt>
+                <dd>
+                  <div class="math">
+                    <span class="big">No dollar figure yet — the ask is bigger</span>
+                    <p>The state wants a permanent injunction, civil penalties under the Missouri Merchandising Practices Act, and restitution. For a platform business, an injunction that rewrites how your app works is costlier than any fine.</p>
+                  </div>
+                </dd>
+              </div>
+            </dl>
+            <p class="source">Sources: <a href="https://www.krps.org/missouri-news/2026-10-15/state-of-missouri-sues-online-marketplace-temu-alleging-consumer-deception" target="_blank" rel="noopener">KBIA / KOMU 8, Oct 15, 2026</a> · <a href="https://www.insurancejournal.com/news/midwest/2026/10/14/888863.htm" target="_blank" rel="noopener">Insurance Journal, Oct 14, 2026</a></p>
+          </article>
+          <!-- 10 · Pennsylvania v. the insulin industry -->
+          <article class="case" data-cat="pricing">
+            <div class="case-top">
+              <span class="docket">№ 10 · Pennsylvania · Filed Oct 13</span>
+              <span class="tag suit">New lawsuit</span>
+            </div>
+            <h3>Pennsylvania v. the insulin industry</h3>
+            <p class="one-liner">The state says drug makers and the middlemen who set drug prices teamed up to inflate insulin prices by more than 1,000%.</p>
+            <dl class="rows">
+              <div class="row">
+                <dt>Who got sued</dt>
+                <dd><p>Eli Lilly and Company, Novo Nordisk Inc., and Sanofi-Aventis US LLC — plus pharmacy benefit managers Express Scripts, CVS Caremark, and Optum RX — in a complaint filed by Attorney General Dave Sunday's Antitrust Section in the Commonwealth Court of Pennsylvania.</p></dd>
+              </div>
+              <div class="row">
+                <dt>What they allegedly did</dt>
+                <dd><p>The suit alleges manufacturers and PBMs worked in coordination to “distort the market for diabetic treatments to their benefit at the expense of Pennsylvania diabetics,” using deceptive practices that pushed insulin prices up more than 1,000%. The claims: violations of Pennsylvania's Unfair Trade Practices and Consumer Protection Law, unjust enrichment, and civil conspiracy. The state wants structural changes to bring costs down to fair market prices and give patients options — plus restitution and penalties. Context: the FTC already reached settlements with Caremark and Express Scripts this year over the same conduct; the case against Optum was paused for a proposed consent agreement.</p></dd>
+              </div>
+              <div class="row">
+                <dt>What it means for you</dt>
+                <dd>
+                  <div class="locked">
+                    <p><svg class="lock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><rect x="4.5" y="10.5" width="15" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg>The plain-English action checklist for this suit — what to check in your business this week — is for Docket Drop Pro members.</p>
+                    <a class="locked-cta" href="#pro">Unlock with Pro</a>
+                  </div>
+                </dd>
+              </div>
+              <div class="row">
+                <dt>The number that matters</dt>
+                <dd>
+                  <div class="math">
+                    <span class="big">1,000%+ · $16.4B</span>
+                    <p>The alleged price inflation, and the estimated annual cost of diagnosed diabetes in Pennsylvania (about 1.3 million residents have diabetes; another 3.5 million have prediabetes, per the AG's office).</p>
+                  </div>
+                </dd>
+              </div>
+            </dl>
+            <p class="source">Sources: <a href="https://www.wesanews.org/health-science-tech/2026-10-15/pa-ag-accuses-insulin-makers-of-pricing-scheme" target="_blank" rel="noopener">90.5 WESA, Oct 15, 2026</a> · <a href="https://insurancenewsnet.com/innarticle/pennsylvania-sues-pharma-and-pbms-over-insulin-prices" target="_blank" rel="noopener">Insurance News Net</a></p>
+          </article>
+
+          <!-- 11 · 40 AGs / Character.AI bankruptcy -->
+          <article class="case" data-cat="kids">
+            <div class="case-top">
+              <span class="docket">№ 11 · 40 states · Hearing Oct 14</span>
+              <span class="tag suit">Coalition action</span>
+            </div>
+            <h3>40 AGs crash the Character.AI bankruptcy</h3>
+            <p class="one-liner">The AI companion company went bankrupt Monday. By Wednesday, 40 attorneys general were in court making sure kids' chat logs don't get sold to the highest bidder.</p>
+            <dl class="rows">
+              <div class="row">
+                <dt>Who got sued</dt>
+                <dd><p>Nobody new — this is about who gets the data. Character.AI, the AI companion chatbot company whose users average two hours a day talking to its bots, filed for Chapter 11 late Monday, October 12 in Delaware. It wants to use the bankruptcy to resolve the states' investigations and lawsuits, license its technology to Disney for $20 million, and find a buyer for the chatbot business.</p></dd>
+              </div>
+              <div class="row">
+                <dt>What's happening</dt>
+                <dd><p>At the first bankruptcy hearing on October 14, an attorney for 40 state attorneys general told the judge the states are negotiating a settlement over allegations that Character.AI's chatbots impersonated licensed medical professionals and exposed children to sexualized and abusive interactions. The states' demand: whoever buys the company must protect users' chat histories and improve safety features. “We're willing to work with the buyers to find safeguards, but we don't want to see what has transpired in the past start over with a new purchaser,” the states' attorney said. New York AG Letitia James: “This company has collected some of the most private thoughts children have ever shared, and now those conversations could be sold off to the highest bidder.” The company's attorney said no buyer has yet made an offer for the user data or the business.</p></dd>
+              </div>
+              <div class="row">
+                <dt>What it means for you</dt>
+                <dd>
+                  <div class="locked">
+                    <p><svg class="lock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><rect x="4.5" y="10.5" width="15" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg>The plain-English action checklist for this suit — what to check in your business this week — is for Docket Drop Pro members.</p>
+                    <a class="locked-cta" href="#pro">Unlock with Pro</a>
+                  </div>
+                </dd>
+              </div>
+              <div class="row">
+                <dt>What's at stake</dt>
+                <dd>
+                  <div class="math">
+                    <span class="big">Not a fines story — a who-owns-the-data story</span>
+                    <p>The asset on the auction block isn't just software; it's millions of private conversations, many with minors. Whatever the court decides about that data will set the template for every AI company's bankruptcy after this one.</p>
+                  </div>
+                </dd>
+              </div>
+            </dl>
+            <p class="source">Source: <a href="https://www.lapost.com/content/us-states-seek-children-s-data-protections-in-character-ai-bankruptcy" target="_blank" rel="noopener">Reuters, Oct 14, 2026</a></p>
+          </article>
+
+          <!-- 12 · New York v. Dollar General -->
+          <article class="case" data-cat="pricing">
+            <div class="case-top">
+              <span class="docket">№ 12 · New York · Announced Oct 15</span>
+              <span class="tag settle">Settlement</span>
+            </div>
+            <h3>New York v. Dollar General — the $1.875M overcharge</h3>
+            <p class="one-liner">The discount chain kept charging more than the shelf said — so the penalty is being paid in groceries.</p>
+            <dl class="rows">
+              <div class="row">
+                <dt>Who got sued</dt>
+                <dd><p>DolGen New York, LLC and Dollar General Corporation, after an investigation launched on consumer complaints.</p></dd>
+              </div>
+              <div class="row">
+                <dt>What they allegedly did</dt>
+                <dd><p>The attorney general's office found Dollar General routinely charged more than the advertised price — shelf tags, digital and print ads, and digital coupons didn't match the register. Investigators reviewed 900+ Weights and Measures inspection reports from 2021–2023 and found 43% documented price-accuracy failures above the state's 2% threshold; secret shoppers at 11 Western New York stores were overcharged on about 14% of items. Receipts came in confusing formats that forced shoppers to do math to figure out what they paid. Under the settlement, Dollar General pays the $1.875 million civil penalty as a donation of food and personal goods to Foodlink, a Rochester hunger-relief nonprofit — and must honor the lowest advertised price at all New York stores, staff up for pricing accuracy, reformat receipts, submit to unannounced independent audits of every New York store twice per fiscal year, and fix any discrepancy within 24 hours. This isn't the chain's first time: Ohio settled the same issue for $1 million in 2023, Pennsylvania for $1.5 million in 2025.</p></dd>
+              </div>
+              <div class="row">
+                <dt>What it means for you</dt>
+                <dd>
+                  <div class="locked">
+                    <p><svg class="lock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><rect x="4.5" y="10.5" width="15" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg>The plain-English action checklist for this suit — what to check in your business this week — is for Docket Drop Pro members.</p>
+                    <a class="locked-cta" href="#pro">Unlock with Pro</a>
+                  </div>
+                </dd>
+              </div>
+              <div class="row">
+                <dt>The penalty math</dt>
+                <dd>
+                  <div class="math">
+                    <span class="big">$1.875 million — in food, not cash</span>
+                    <p>The shoppers who were overcharged don't get refunds from this one; the money goes to a food bank. The ongoing cost is the compliance regime: audits of every store, twice a year, forever.</p>
+                  </div>
+                </dd>
+              </div>
+            </dl>
+            <p class="source">Sources: <a href="https://ag.ny.gov/press-release/2026/attorney-general-james-secures-1875-million-food-and-goods-dollar-general" target="_blank" rel="noopener">New York AG's office</a> · <a href="https://www.democratandchronicle.com/story/news/2026/10/16/dollar-general-foodlink-rochester-donation-overcharging-probe-new-york/92269642007/" target="_blank" rel="noopener">Democrat and Chronicle, Oct 16, 2026</a></p>
+          </article>
+          <!-- 13 · Connecticut v. Frontier -->
+          <article class="case" data-cat="privacy">
+            <div class="case-top">
+              <span class="docket">№ 13 · Connecticut · Announced Oct 16</span>
+              <span class="tag settle">Settlement</span>
+            </div>
+            <h3>Connecticut v. Frontier — the $625,000 breach</h3>
+            <p class="one-liner">A hacker walked in with stolen employee logins and walked out with 58,841 Social Security numbers. The state says the doors were left open.</p>
+            <dl class="rows">
+              <div class="row">
+                <dt>Who got sued</dt>
+                <dd><p>Frontier Communications Parent Inc. — the telecom Verizon acquired in January 2026.</p></dd>
+              </div>
+              <div class="row">
+                <dt>What they allegedly did</dt>
+                <dd><p>In April 2024, a hacker used compromised employee and vendor credentials to break into Frontier's internal systems and steal unencrypted personal information — including Social Security numbers — belonging to 58,841 Connecticut residents, later offering it for sale on the dark web. The state's investigation found failings in access management, network segmentation, logging and monitoring, encryption, incident response, employee training, and data loss prevention. Under the settlement, Frontier pays $625,000 to the state and must maintain a comprehensive information-security program that reports to the CEO, train employees, keep an incident response plan, and implement specific safeguards (MFA, password management, access controls, encryption, penetration testing, intrusion detection) — plus undergo an outside security assessment within a year and hand the report to the AG. A related class action already settled for $5.64 million covering about 750,000 people with two years of credit monitoring.</p></dd>
+              </div>
+              <div class="row">
+                <dt>What it means for you</dt>
+                <dd>
+                  <div class="locked">
+                    <p><svg class="lock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><rect x="4.5" y="10.5" width="15" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg>The plain-English action checklist for this suit — what to check in your business this week — is for Docket Drop Pro members.</p>
+                    <a class="locked-cta" href="#pro">Unlock with Pro</a>
+                  </div>
+                </dd>
+              </div>
+              <div class="row">
+                <dt>The penalty math</dt>
+                <dd>
+                  <div class="math">
+                    <span class="big">$625,000 — plus a security program that reports to the CEO</span>
+                    <p>Small fine, big fix: the injunctive terms read like a CISO's annual plan, now court-enforceable.</p>
+                  </div>
+                </dd>
+              </div>
+            </dl>
+            <p class="source">Sources: <a href="https://world.einnews.com/pr_news/950133163/attorney-general-tong-announces-625-000-settlement-with-frontier-over-data-breach" target="_blank" rel="noopener">Connecticut AG's office (via EIN Presswire), Oct 16, 2026</a> · <a href="https://cybernews.com/news/frontier-connecticut-data-breach-settlement/" target="_blank" rel="noopener">Cybernews</a></p>
+          </article>
+
+          <!-- 14 · Arizona v. Roblox -->
+          <article class="case" data-cat="kids">
+            <div class="case-top">
+              <span class="docket">№ 14 · Arizona · Petition announced Oct 16</span>
+              <span class="tag suit">Enforcement action</span>
+            </div>
+            <h3>Arizona v. Roblox — produce the documents</h3>
+            <p class="one-liner">Arizona's AG spent five months asking Roblox how it protects kids. Now she's asking a judge to make them answer.</p>
+            <dl class="rows">
+              <div class="row">
+                <dt>Who got sued</dt>
+                <dd><p>Roblox Corporation — via a Petition for Enforcement of Civil Investigative Demands, not a full lawsuit yet.</p></dd>
+              </div>
+              <div class="row">
+                <dt>What they allegedly did</dt>
+                <dd><p>The state issued two civil investigative demands (May and August 2026) to evaluate suspected violations of the Arizona Consumer Fraud Act — failing to take basic precautions against sexual exploitation, violent content, and age-inappropriate material on a platform used by hundreds of thousands of Arizona minors, while assuring parents the platform is safe. After repeated extensions and months of communication, Roblox “failed to provide complete responses to even the State's most limited priority requests,” per the AG's office. The petition (filed October 13, announced October 16) asks the court to order immediate production of safety data and documents — and to hold Roblox in contempt until it complies. “The Attorney General's Office will not allow companies to stonewall our efforts to protect Arizona children,” Mayes said.</p></dd>
+              </div>
+              <div class="row">
+                <dt>What it means for you</dt>
+                <dd>
+                  <div class="locked">
+                    <p><svg class="lock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><rect x="4.5" y="10.5" width="15" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg>The plain-English action checklist for this suit — what to check in your business this week — is for Docket Drop Pro members.</p>
+                    <a class="locked-cta" href="#pro">Unlock with Pro</a>
+                  </div>
+                </dd>
+              </div>
+              <div class="row">
+                <dt>What's at stake</dt>
+                <dd>
+                  <div class="math">
+                    <span class="big">Answer the subpoena or face contempt</span>
+                    <p>No fine yet — this is the investigation phase with teeth. The lesson for every company: how you respond to a civil investigative demand can become its own enforcement action.</p>
+                  </div>
+                </dd>
+              </div>
+            </dl>
+            <p class="source">Sources: <a href="https://www.azag.gov/press-release/attorney-general-mayes-asks-court-compel-roblox-comply-child-safety-investigation" target="_blank" rel="noopener">Arizona AG's office, Oct 16, 2026</a> · <a href="https://news.bloomberglaw.com/litigation/roblox-under-fire-for-response-to-arizona-child-safety-probe" target="_blank" rel="noopener">Bloomberg Law, Oct 16, 2026</a></p>
+          </article>
+        </section>
+
+        <footer>
+          <h2>Sources for Issue № 2</h2>
+          <ul>
+            <li>Seven more states pile onto OpenAI — <a href="https://www.pymnts.com/news/artificial-intelligence/2026/eight-states-bring-parallel-lawsuits-against-openai-over-safety-issues/" target="_blank" rel="noopener">PYMNTS, Oct 15, 2026</a>; <a href="https://www.lexblog.com/2026/10/16/eight-state-ags-sue-openai-over-chatgpt-safety-and-consumer-protection/" target="_blank" rel="noopener">LexBlog, Oct 16, 2026</a></li>
+            <li>Missouri v. Temu — <a href="https://www.krps.org/missouri-news/2026-10-15/state-of-missouri-sues-online-marketplace-temu-alleging-consumer-deception" target="_blank" rel="noopener">KBIA / KOMU 8, Oct 15, 2026</a>; <a href="https://www.insurancejournal.com/news/midwest/2026/10/14/888863.htm" target="_blank" rel="noopener">Insurance Journal, Oct 14, 2026</a></li>
+            <li>Pennsylvania v. the insulin industry — <a href="https://www.wesanews.org/health-science-tech/2026-10-15/pa-ag-accuses-insulin-makers-of-pricing-scheme" target="_blank" rel="noopener">90.5 WESA, Oct 15, 2026</a>; <a href="https://insurancenewsnet.com/innarticle/pennsylvania-sues-pharma-and-pbms-over-insulin-prices" target="_blank" rel="noopener">Insurance News Net</a></li>
+            <li>40 AGs crash the Character.AI bankruptcy — <a href="https://www.lapost.com/content/us-states-seek-children-s-data-protections-in-character-ai-bankruptcy" target="_blank" rel="noopener">Reuters, Oct 14, 2026</a></li>
+            <li>New York v. Dollar General — <a href="https://ag.ny.gov/press-release/2026/attorney-general-james-secures-1875-million-food-and-goods-dollar-general" target="_blank" rel="noopener">New York AG's office</a>; <a href="https://www.democratandchronicle.com/story/news/2026/10/16/dollar-general-foodlink-rochester-donation-overcharging-probe-new-york/92269642007/" target="_blank" rel="noopener">Democrat and Chronicle, Oct 16, 2026</a></li>
+            <li>Connecticut v. Frontier — <a href="https://world.einnews.com/pr_news/950133163/attorney-general-tong-announces-625-000-settlement-with-frontier-over-data-breach" target="_blank" rel="noopener">Connecticut AG's office (via EIN Presswire), Oct 16, 2026</a>; <a href="https://cybernews.com/news/frontier-connecticut-data-breach-settlement/" target="_blank" rel="noopener">Cybernews</a></li>
+            <li>Arizona v. Roblox — <a href="https://www.azag.gov/press-release/attorney-general-mayes-asks-court-compel-roblox-comply-child-safety-investigation" target="_blank" rel="noopener">Arizona AG's office, Oct 16, 2026</a>; <a href="https://news.bloomberglaw.com/litigation/roblox-under-fire-for-response-to-arizona-child-safety-probe" target="_blank" rel="noopener">Bloomberg Law, Oct 16, 2026</a></li>
+          </ul>
+        </footer>
+      </div>
 
       <section class="hero">
         <svg class="hero-gavel" viewBox="0 0 72 72" fill="currentColor" aria-hidden="true" focusable="false"><g transform="rotate(-42 36 30)"><rect x="20" y="12" width="32" height="9" rx="2"/><rect x="14.5" y="9.5" width="7" height="14" rx="2.5"/><rect x="50.5" y="9.5" width="7" height="14" rx="2.5"/><rect x="33" y="21" width="6" height="27" rx="3"/></g><rect x="18" y="59" width="36" height="4.5" rx="2.25"/></svg>
         <h1>This week's major AG lawsuits, rulings, and settlements, <em>in plain English.</em></h1>
         <p class="dek">State attorneys general are now the front-line regulators of American business — and this week they moved on a chat platform, an AI giant, a payments network, and a gym chain. No legalese. Just who got sued, what they allegedly did, what it means for your company, and what it could cost.</p>
-        <p class="dek">What are the nation's state attorneys general doing? We track their lawsuits, rulings, and settlements across all 50 states and bring the week's developments into one place, with the context to understand them — so you can stay informed without digging through dozens of sources.</p>
         <a class="hero-cta" href="#signup">Get this free every Friday</a>
         <span class="hero-note">One email a week. Name + email, that's it.</span>
 
         <div class="stats" role="list">
-          <div class="stat" role="listitem"><b>7</b><span>notable AG actions this week, across 6 states</span></div>
+          <div class="stat" role="listitem"><b>7</b><span>AG actions tracked this week, across 6 states</span></div>
           <div class="stat" role="listitem"><b>$150,000</b><span>top penalty for a single violation — Florida's child-safety law, when a company acted knowingly</span></div>
           <div class="stat" role="listitem"><b>72 hrs</b><span>for the three headline suits to land: Discord, ChatGPT, Zelle</span></div>
         </div>
@@ -817,22 +1147,24 @@
 
     <script>
       (function () {
-        /* ---------- topic filter ---------- */
-        var buttons = Array.prototype.slice.call(document.querySelectorAll('.filters button'));
-        var cards = Array.prototype.slice.call(document.querySelectorAll('.case'));
-        buttons.forEach(function (btn) {
-          btn.addEventListener('click', function () {
-            buttons.forEach(function (b) { b.setAttribute('aria-pressed', 'false'); });
-            btn.setAttribute('aria-pressed', 'true');
-            var f = btn.getAttribute('data-filter');
-            cards.forEach(function (card) {
-              card.hidden = !(f === 'all' || card.getAttribute('data-cat') === f);
+        /* ---------- topic filter (scoped to each issue's docket section) ---------- */
+        Array.prototype.slice.call(document.querySelectorAll('.filters')).forEach(function (group) {
+          var scope = group.closest('section') || document;
+          var buttons = Array.prototype.slice.call(group.querySelectorAll('button'));
+          var cards = Array.prototype.slice.call(scope.querySelectorAll('.case'));
+          buttons.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+              buttons.forEach(function (b) { b.setAttribute('aria-pressed', 'false'); });
+              btn.setAttribute('aria-pressed', 'true');
+              var f = btn.getAttribute('data-filter');
+              cards.forEach(function (card) {
+                card.hidden = !(f === 'all' || card.getAttribute('data-cat') === f);
+              });
             });
           });
         });
 
       })();
     </script>
-  <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3b75ce4aced94d3ebafb77e13001f953"}'></script><!-- End Cloudflare Web Analytics -->
-</body>
+  </body>
 </html>
