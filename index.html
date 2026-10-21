@@ -387,6 +387,22 @@
         margin: 14px 0 0; letter-spacing: .01em;
       }
 
+      /* ---------- desktop ---------- */
+      @media (min-width: 1024px) {
+        .wrap { max-width: 1140px; padding: 0 32px 88px; }
+        .hero { padding: 64px 60px 44px; margin-top: 34px; }
+        .hero h1 { font-size: 74px; }
+        .dek { max-width: 720px; }
+        section[aria-labelledby="cases-h"] {
+          display: grid; grid-template-columns: 1fr 1fr; gap: 22px; align-items: start;
+        }
+        section[aria-labelledby="cases-h"] > h2.section,
+        section[aria-labelledby="cases-h"] > .section-sub,
+        section[aria-labelledby="cases-h"] > .filters { grid-column: 1 / -1; }
+        section[aria-labelledby="cases-h"] > .case { margin-top: 0; }
+        .case .row { grid-template-columns: 138px 1fr; }
+        .signup, .pro { padding: 48px 52px 40px; }
+      }
       @media (max-width: 700px) {
         .hero { padding: 32px 22px 24px; margin-top: 18px; }
         .hero-gavel { width: 210px; height: 210px; right: -64px; top: -30px; }
