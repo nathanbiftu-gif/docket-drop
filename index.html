@@ -377,26 +377,18 @@
         margin: 14px 0 0; letter-spacing: .01em;
       }
 
-      /* ---------- desktop ---------- */
       @media (min-width: 1024px) {
         .wrap { max-width: 1140px; padding: 0 32px 88px; }
         .hero { padding: 64px 60px 44px; margin-top: 34px; }
         .hero h1 { font-size: 74px; }
         .dek { max-width: 720px; }
-        section[aria-labelledby="cases-h"], section[aria-labelledby="cases-h-2"] {
-          display: grid; grid-template-columns: 1fr 1fr; gap: 22px; align-items: start;
-        }
-        section[aria-labelledby="cases-h"] > h2.section,
-        section[aria-labelledby="cases-h"] > .section-sub,
-        section[aria-labelledby="cases-h"] > .filters,
-        section[aria-labelledby="cases-h-2"] > h2.section,
-        section[aria-labelledby="cases-h-2"] > .section-sub,
-        section[aria-labelledby="cases-h-2"] > .filters { grid-column: 1 / -1; }
-        section[aria-labelledby="cases-h"] > .case,
-        section[aria-labelledby="cases-h-2"] > .case { margin-top: 0; }
+        section[aria-labelledby="cases-h"], section[aria-labelledby="cases-h-2"] { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; align-items: start; }
+        section[aria-labelledby="cases-h"] > h2.section, section[aria-labelledby="cases-h"] > .section-sub, section[aria-labelledby="cases-h"] > .filters, section[aria-labelledby="cases-h-2"] > h2.section, section[aria-labelledby="cases-h-2"] > .section-sub, section[aria-labelledby="cases-h-2"] > .filters { grid-column: 1 / -1; }
+        section[aria-labelledby="cases-h"] > .case, section[aria-labelledby="cases-h-2"] > .case { margin-top: 0; }
         .case .row { grid-template-columns: 138px 1fr; }
         .signup, .pro { padding: 48px 52px 40px; }
       }
+
       @media (max-width: 700px) {
         .hero { padding: 32px 22px 24px; margin-top: 18px; }
         .hero-gavel { width: 210px; height: 210px; right: -64px; top: -30px; }
@@ -429,12 +421,12 @@
         <section class="hero">
           <svg class="hero-gavel" viewBox="0 0 72 72" fill="currentColor" aria-hidden="true" focusable="false"><g transform="rotate(-42 36 30)"><rect x="20" y="12" width="32" height="9" rx="2"/><rect x="14.5" y="9.5" width="7" height="14" rx="2.5"/><rect x="50.5" y="9.5" width="7" height="14" rx="2.5"/><rect x="33" y="21" width="6" height="27" rx="3"/></g><rect x="18" y="59" width="36" height="4.5" rx="2.25"/></svg>
           <h1>This week's major AG lawsuits, rulings, and settlements, <em>in plain English.</em></h1>
-          <p class="dek">Issue № 1 covered the first seven cases of this enforcement wave. Here are the next seven: the OpenAI pile-on keeps growing, Missouri tells the state to delete Temu, Pennsylvania takes on the insulin industry, and 40 attorneys general walk into a bankruptcy hearing to protect kids' chat logs. No legalese. Just who got sued, what they allegedly did, what it means for your company, and what it could cost.</p>
-          <a class="hero-cta" href="#signup">Get this free every Friday</a>
+          <p class="dek">Issue № 1 covered the first seven cases of this enforcement wave. Here are the next seven: the OpenAI pile-on keeps growing, Missouri's AG tells residents to delete Temu, Pennsylvania takes on the insulin industry, and 40 attorneys general walk into a bankruptcy hearing to protect kids' chat logs. No legalese. Just who got sued, what they allegedly did, what it means for your company, and what it could cost.</p>
+          <a class="hero-cta" href="#signup">Get this free every Monday</a>
           <span class="hero-note">One email a week. Name + email, that's it.</span>
 
           <div class="stats" role="list">
-            <div class="stat" role="listitem"><b>7</b><span>notable AG actions this week, across 9 states plus a 40-state coalition</span></div>
+            <div class="stat" role="listitem"><b>7</b><span>notable AG actions this week, across 12 states plus a 40-state coalition</span></div>
             <div class="stat" role="listitem"><b>$1.875M</b><span>top settlement — New York v. Dollar General</span></div>
             <div class="stat" role="listitem"><b>40</b><span>attorneys general in one bankruptcy courtroom</span></div>
           </div>
@@ -766,7 +758,7 @@
         <svg class="hero-gavel" viewBox="0 0 72 72" fill="currentColor" aria-hidden="true" focusable="false"><g transform="rotate(-42 36 30)"><rect x="20" y="12" width="32" height="9" rx="2"/><rect x="14.5" y="9.5" width="7" height="14" rx="2.5"/><rect x="50.5" y="9.5" width="7" height="14" rx="2.5"/><rect x="33" y="21" width="6" height="27" rx="3"/></g><rect x="18" y="59" width="36" height="4.5" rx="2.25"/></svg>
         <h1>This week's major AG lawsuits, rulings, and settlements, <em>in plain English.</em></h1>
         <p class="dek">State attorneys general are now the front-line regulators of American business — and this week they moved on a chat platform, an AI giant, a payments network, and a gym chain. No legalese. Just who got sued, what they allegedly did, what it means for your company, and what it could cost.</p>
-        <a class="hero-cta" href="#signup">Get this free every Friday</a>
+        <a class="hero-cta" href="#signup">Get this free every Monday</a>
         <span class="hero-note">One email a week. Name + email, that's it.</span>
 
         <div class="stats" role="list">
@@ -1100,12 +1092,12 @@
       <div class="ornament" aria-hidden="true"><i></i></div>
 
       <section class="signup" id="signup" aria-labelledby="signup-h">
-        <h2 id="signup-h">Next Friday, this lands in your inbox.</h2>
+        <h2 id="signup-h">Next Monday, this lands in your inbox.</h2>
         <p class="lede">Every AG suit that matters to a business owner, in plain English — the case, what it means for you, and the math. Docket Drop is free. No legalese, no unnecessary complexity, and no pressure to upgrade.</p>
 
         <script async data-uid="d23c7bdb4d" src="https://ag-radar.kit.com/d23c7bdb4d/index.js"></script>
 
-        <p class="fineprint">One email a week, every Friday. Unsubscribe in one click, whenever. We never sell the list — and that promise stays even if this publication ever changes owners.</p>
+        <p class="fineprint">One email a week, every Monday. Unsubscribe in one click, whenever. We never sell the list — and that promise stays even if this publication ever changes owners.</p>
       </section>
 
       <section class="pro" id="pro" aria-labelledby="pro-h">
@@ -1114,7 +1106,7 @@
         <h2 id="pro-h">Docket Drop <span class="gold">Pro</span></h2>
         <p>Docket Drop is free. Docket Drop Pro is for readers who need more than the headlines — they want to hear it first, and know what to do about it.</p>
         <ul class="pro-benefits">
-          <li><b>Breaking-news alerts.</b> When a major suit lands, Pro members hear it first — the alert goes out as soon as we've checked it, not with Friday's roundup.</li>
+          <li><b>Breaking-news alerts.</b> When a major suit lands, Pro members hear it first — the alert goes out as soon as we've checked it, not with Monday's roundup.</li>
           <li><b>Filtered to your industry.</b> The week's suits cut to the ones that touch your business — no sifting required.</li>
           <li><b>An action checklist with every major suit.</b> The plain-English version of “what it means for you”: what to check, fix, and review in your business this week.</li>
           <li><b>A monthly enforcement briefing.</b> Where enforcement is heading next in your industry — before it gets there.</li>
